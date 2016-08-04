@@ -31,15 +31,17 @@ public class DatabaseLoader implements ApplicationRunner {
                 "Up and running with %s",
                 "%s Basics",
                 "%s for Beginners",
-                "%s for Neckbeards",
                 "%s for Professionals",
                 "%s for Dummies",
+                "Beginning Programming with %s",
+                "%s: The Complete Course",
                 "Under the hood: %s"
         };
 
         String[] buzzwords = {
                 "Spring REST Data",
                 "Java 9",
+                "Java EE",
                 "Scala",
                 "Groovy",
                 "Hibernate",
