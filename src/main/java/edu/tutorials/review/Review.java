@@ -1,21 +1,16 @@
 package edu.tutorials.review;
 
+import edu.tutorials.core.BaseEntity;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
 @Entity
-public class Review {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private final Long id;
+public class Review extends BaseEntity {
     private int rating;
     private String description;
 
-    // TODO: 05.08.2016 - we are duplicating code here for every single entity. Share it?
     protected Review() {
-        id = null;
+        super();
     }
     public int getRating() {
         return rating;
